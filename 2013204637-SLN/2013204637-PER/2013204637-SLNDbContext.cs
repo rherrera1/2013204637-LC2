@@ -23,6 +23,14 @@ namespace _2013204637_PER
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new ATMConfiguration());
+            modelBuilder.Configurations.Add(new BaseDatosConfiguration());
+            modelBuilder.Configurations.Add(new CuentaConfiguration());
+            modelBuilder.Configurations.Add(new DispensadorEfectivoConfiguration());
+            modelBuilder.Configurations.Add(new PantallaConfiguration());
+            modelBuilder.Configurations.Add(new RanuraDepositoConfiguration());
+            modelBuilder.Configurations.Add(new RetiroConfiguration());
+            modelBuilder.Configurations.Add(new TecladoConfiguration());
+
 
             base.OnModelCreating(modelBuilder);
 
