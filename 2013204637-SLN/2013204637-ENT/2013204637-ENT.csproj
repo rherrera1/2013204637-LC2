@@ -47,6 +47,15 @@
     <Compile Include="Entidades\RanuraDeposito.cs" />
     <Compile Include="Entidades\Retiro.cs" />
     <Compile Include="Entidades\Teclado.cs" />
+    <Compile Include="IRepositories\IATMRepository.cs" />
+    <Compile Include="IRepositories\IBaseDatosRepository.cs" />
+    <Compile Include="IRepositories\ICuentaRepository.cs" />
+    <Compile Include="IRepositories\IDispensadorEfectivoRepository.cs" />
+    <Compile Include="IRepositories\IPantallaRepository.cs" />
+    <Compile Include="IRepositories\IRanuraDepositoRepository.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IRepositories\IReritoRepository.cs" />
+    <Compile Include="IRepositories\ITecladoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
