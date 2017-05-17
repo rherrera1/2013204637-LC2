@@ -20,7 +20,13 @@ namespace _2013204637_PER
         public DbSet<Retiro> Retiros { get; set; }
         public DbSet<Teclado> Teclados { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new ATMConfiguration());
 
+            base.OnModelCreating(modelBuilder);
+
+        }
         
     }
 }
