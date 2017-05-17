@@ -54,7 +54,7 @@
     <Compile Include="IRepositories\IPantallaRepository.cs" />
     <Compile Include="IRepositories\IRanuraDepositoRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
-    <Compile Include="IRepositories\IReritoRepository.cs" />
+    <Compile Include="IRepositories\IRetiroRepository.cs" />
     <Compile Include="IRepositories\ITecladoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

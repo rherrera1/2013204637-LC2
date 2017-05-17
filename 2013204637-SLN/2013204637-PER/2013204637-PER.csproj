@@ -56,6 +56,15 @@
     <Compile Include="EntitiesConfigurations\RetiroConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\TecladoConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ATMRepository.cs" />
+    <Compile Include="Repositories\BaseDatosRepository.cs" />
+    <Compile Include="Repositories\CuentaRepository.cs" />
+    <Compile Include="Repositories\DispensadorEfectivoRepository.cs" />
+    <Compile Include="Repositories\PantallaRepository.cs" />
+    <Compile Include="Repositories\RanuraDepositoRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\RetiroRepository.cs" />
+    <Compile Include="Repositories\TecladoRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
