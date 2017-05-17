@@ -12,8 +12,15 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public RetiroConfiguration()
         {
-            Property(v => v.RetiroId)
-             .IsRequired();
+            HasKey(a => a.RetiroId);
+            HasRequired(c => c.Teclado)
+                .WithOptional(c => c.Retiro);
+            HasOptional(c => c.DispensadorEfectivo)
+                .WithRequired(c => c.Retiro);
+            HasOptional(c => c.Pantalla)
+                .WithRequired(c => c.Retiro);
+            HasOptional(c => c.BaseDatos)
+                .WithRequired(c => c.Retiro);
         }
     }
 }

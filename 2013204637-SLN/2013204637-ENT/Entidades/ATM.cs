@@ -15,6 +15,7 @@ namespace _2013204637
         private Pantalla _Pantalla;
         private DispensadorEfectivo _DispensadorEfectivo;
         public BaseDatos BaseDatos { get; set; }
+        public Retiro Retiro { get; set; }
 
         public RanuraDeposito RanuraDeposito
         {

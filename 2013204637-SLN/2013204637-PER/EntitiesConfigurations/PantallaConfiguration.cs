@@ -12,8 +12,10 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public PantallaConfiguration()
         {
-            Property(v => v.PantallaId)
-                .IsRequired();
+            HasKey(a => a.PantallaId);
+            Property(v => v.Texto)
+                .IsRequired()
+                .HasMaxLength(255);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace _2013204637
         private int _NumeroCuenta;
         private int _Pin;
         private decimal _Monto;
+        public BaseDatos BaseDatos { get; set; }
 
 
         public int NumeroCuenta

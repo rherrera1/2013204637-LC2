@@ -12,8 +12,9 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public RanuraDepositoConfiguration()
         {
-            Property(v => v.RanuraDepositoId)
-             .IsRequired();
+            HasKey(a => a.RanuraDepositoId);
+            Property(v => v.deposito)
+                .IsRequired();
         }
     }
 }

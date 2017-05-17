@@ -12,7 +12,12 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public CuentaConfiguration()
         {
-            Property(v => v.CuentaId)
+            HasKey(a => a.CuentaId);
+            Property(v => v.Monto)
+                .IsRequired();
+            Property(v => v.NumeroCuenta)
+                .IsRequired();
+            Property(v => v.Pin)
                 .IsRequired();
         }
     }

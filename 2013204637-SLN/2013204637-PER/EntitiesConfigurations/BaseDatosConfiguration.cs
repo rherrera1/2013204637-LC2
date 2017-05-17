@@ -12,8 +12,9 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public BaseDatosConfiguration()
         {
-            Property(v => v.BaseDatosId)
-                .IsRequired();
+            HasKey(a => a.BaseDatosId);
+            HasMany(c => c.Cuentas)
+                .WithRequired(c => c.BaseDatos);
         }
     }
 }

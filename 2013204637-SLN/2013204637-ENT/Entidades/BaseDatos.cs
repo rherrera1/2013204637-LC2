@@ -9,6 +9,7 @@ namespace _2013204637
     public class BaseDatos
     {
         public int BaseDatosId { get; set; }
+        public Retiro Retiro { get; set; }
         private List<Cuenta> _Cuentas;
         public List<Cuenta> Cuentas
         {

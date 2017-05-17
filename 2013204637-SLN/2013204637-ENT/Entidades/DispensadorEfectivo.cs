@@ -10,6 +10,8 @@ namespace _2013204637
     {
         public int DispensadorEfectivoId { get; set; }
         private int _Contador = -500;
+        public ATM ATM { get; set; }
+        public Retiro Retiro { get; set; }
 
         public int Contador
         {

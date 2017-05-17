@@ -12,7 +12,10 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public DispensadorEfectivoConfiguration()
         {
+            HasKey(a => a.DispensadorEfectivoId);
             Property(v => v.DispensadorEfectivoId)
+                .IsRequired();
+            Property(v => v.Contador)
                 .IsRequired();
         }
     }

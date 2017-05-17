@@ -11,6 +11,8 @@ namespace _2013204637
         public int TecladoId { get; set; }
         private int _NumeroCuenta;
         private int _Pin;
+        public ATM ATM { get; set; }
+        public Retiro Retiro { get; set; }
 
         public int NumeroCuenta
         {
