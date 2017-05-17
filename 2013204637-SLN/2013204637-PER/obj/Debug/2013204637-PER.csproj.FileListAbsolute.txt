@@ -1,0 +1,12 @@
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\2013204637-PER.dll.config
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\2013204637-PER.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\2013204637-PER.pdb
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\2013204637-ENT.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\EntityFramework.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\2013204637-ENT.pdb
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\EntityFramework.xml
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\obj\Debug\2013204637-PER.csprojResolveAssemblyReference.cache
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\obj\Debug\2013204637-PER.dll
+C:\Users\pc\Documents\Visual Studio 2013\Projects\2013204637-LC2\2013204637-SLN\2013204637-PER\obj\Debug\2013204637-PER.pdb

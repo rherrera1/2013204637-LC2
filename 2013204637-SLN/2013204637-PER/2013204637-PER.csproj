@@ -47,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="2013204637-SLNDbContext.cs" />
+    <Compile Include="EntitiesConfigurations\ATMConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\BaseDatosConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\CuentaConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\DispensadorEfectivoConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\PantallaConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\RanuraDepositoConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\RetiroConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\TecladoConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Configurations\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
