@@ -8,7 +8,7 @@ namespace _2013204637
 {
     public class Pantalla
     {
-
+        public int PantallaId { get; set; }
         private string _Texto;
 
         public string Texto

@@ -8,6 +8,7 @@ namespace _2013204637
 {
     public class Cuenta
     {
+        public int CuentaId { get; set; }
         private int _NumeroCuenta;
         private int _Pin;
         private decimal _Monto;

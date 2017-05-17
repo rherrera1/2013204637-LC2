@@ -12,7 +12,8 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public PantallaConfiguration()
         {
-
+            Property(v => v.PantallaId)
+                .IsRequired();
         }
     }
 }

@@ -12,7 +12,8 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public TecladoConfiguration()
         {
-
+            Property(v => v.TecladoId)
+             .IsRequired();
         }
     }
 }

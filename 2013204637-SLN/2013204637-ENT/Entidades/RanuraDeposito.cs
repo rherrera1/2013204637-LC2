@@ -8,6 +8,7 @@ namespace _2013204637
 {
     public class RanuraDeposito
     {
+        public int RanuraDepositoId { get; set; }
         //aqui se guarda el monto de l deposito con la variable deposito
         //esta clase no se usara porque la unica transaccin disponible es de Retiro
         private int _deposito;

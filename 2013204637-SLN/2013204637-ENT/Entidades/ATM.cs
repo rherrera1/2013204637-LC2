@@ -8,6 +8,7 @@ namespace _2013204637
 {
     public class ATM
     {
+        public int ATMId { get; set; }
         //los objetos de las clases con las que se relaciona
         private RanuraDeposito _RanuraDeposito;
         private Teclado _Teclado;

@@ -8,6 +8,7 @@ namespace _2013204637
 {
     public class Teclado
     {
+        public int TecladoId { get; set; }
         private int _NumeroCuenta;
         private int _Pin;
 

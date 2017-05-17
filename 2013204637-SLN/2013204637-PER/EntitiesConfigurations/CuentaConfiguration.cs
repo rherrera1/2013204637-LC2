@@ -12,7 +12,8 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public CuentaConfiguration()
         {
-
+            Property(v => v.CuentaId)
+                .IsRequired();
         }
     }
 }

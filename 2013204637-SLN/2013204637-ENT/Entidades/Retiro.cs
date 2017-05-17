@@ -8,6 +8,7 @@ namespace _2013204637
 {
     public class Retiro
     {
+        public int RetiroId { get; set; }
         public Teclado Teclado { get; set; }
         public Pantalla Pantalla { get; set; }
         public DispensadorEfectivo DispensadorEfectivo { get; set; }
