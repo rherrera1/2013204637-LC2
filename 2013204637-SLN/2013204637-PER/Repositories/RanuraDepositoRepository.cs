@@ -10,5 +10,17 @@ namespace _2013204637_PER.Repositories
 {
     public class RanuraDepositoRepository : Repository<RanuraDeposito>, IRanuraDepositoRepository
     {
+        private readonly _2013204637_SLNDbContext _Context;
+
+        public RanuraDepositoRepository(_2013204637_SLNDbContext _Context)
+        {
+            // TODO: Complete member initialization
+            this._Context = _Context;
+        }
+
+        private RanuraDepositoRepository()
+        {
+
+        }
     }
 }
