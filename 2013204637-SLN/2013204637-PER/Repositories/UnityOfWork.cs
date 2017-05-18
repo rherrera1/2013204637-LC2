@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace _2013204637_PER.Repositories
 {
-    class UnityOfWork : IUnityOfWork
+    public class UnityOfWork : IUnityOfWork
     {
         private readonly _2013204637_SLNDbContext _Context;
-
+        private static UnityOfWork _Instance;
+        private static readonly object _Lock = new object();
         
 
         public IATMRepository ATMs{get;private set; }
@@ -38,22 +39,28 @@ namespace _2013204637_PER.Repositories
             Teclados = new TecladoRepository(_Context);
         }
 
-        public UnityOfWork()
-        {
 
+        public static UnityOfWork Instance
+        {
+            get
+            {
+                lock(_Lock)
+                {
+                    if (_Instance == null)
+                    _Instance = new UnityOfWork();
+                }
+                return _Instance;
+            }
         }
 
-        //ctores
-
-
-        int IUnityOfWork.SaveChanges()
+        public int SaveChanges()
         {
-            throw new NotImplementedException();
+            return _Context.SaveChanges();
         }
 
-        void IDisposable.Dispose()
+        public void Dispose()
         {
-            throw new NotImplementedException();
+            _Context.Dispose();
         }
     }
 }
