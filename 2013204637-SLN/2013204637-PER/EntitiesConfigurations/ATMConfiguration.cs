@@ -12,17 +12,11 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public ATMConfiguration() 
         {
+            ToTable("ATM");
             HasKey(a => a.ATMId);
-            HasRequired(c => c.RanuraDeposito)
-                .WithRequiredPrincipal(c => c.ATM);
-            HasRequired(c => c.Teclado)
-                .WithRequiredPrincipal(c => c.ATM);
-            HasRequired(c => c.DispensadorEfectivo)
-                .WithRequiredPrincipal(c => c.ATM);
-            HasRequired(c => c.Pantalla)
-                .WithRequiredPrincipal(c => c.ATM);
-            HasOptional(c => c.Retiro)
-                .WithRequired(c => c.ATM);
+            Property(x => x.DescATM).IsRequired();
+            
+
         }
     }
 }

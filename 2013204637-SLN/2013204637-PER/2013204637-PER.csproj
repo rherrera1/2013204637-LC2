@@ -46,28 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2013204637-SLNDbContext.cs" />
+    <Compile Include="ATMDbContext.cs" />
     <Compile Include="EntitiesConfigurations\ATMConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\BaseDatosConfiguration.cs" />
+    <Compile Include="EntitiesConfigurations\ClienteConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\CuentaConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\DispensadorEfectivoConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\PantallaConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\RanuraDepositoConfiguration.cs" />
     <Compile Include="EntitiesConfigurations\RetiroConfiguration.cs" />
-    <Compile Include="EntitiesConfigurations\TecladoConfiguration.cs" />
+    <Compile Include="Migrations\201706110106024_rod12435639685g4.cs" />
+    <Compile Include="Migrations\201706110106024_rod12435639685g4.Designer.cs">
+      <DependentUpon>201706110106024_rod12435639685g4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ATMRepository.cs" />
-    <Compile Include="Repositories\BaseDatosRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository.cs" />
     <Compile Include="Repositories\CuentaRepository.cs" />
-    <Compile Include="Repositories\DispensadorEfectivoRepository.cs" />
-    <Compile Include="Repositories\PantallaRepository.cs" />
-    <Compile Include="Repositories\RanuraDepositoRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\RetiroRepository.cs" />
-    <Compile Include="Repositories\TecladoRepository.cs" />
     <Compile Include="Repositories\UnityOfWork.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -77,6 +73,11 @@
       <Project>{c89ff4bd-21c9-4583-ad3d-db3df93bcc4b}</Project>
       <Name>2013204637-ENT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706110106024_rod12435639685g4.resx">
+      <DependentUpon>201706110106024_rod12435639685g4.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

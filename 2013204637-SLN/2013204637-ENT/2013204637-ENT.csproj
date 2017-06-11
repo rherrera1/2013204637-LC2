@@ -40,22 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\ATM.cs" />
-    <Compile Include="Entidades\BaseDatos.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Cuenta.cs" />
-    <Compile Include="Entidades\DispensadorEfectivo.cs" />
-    <Compile Include="Entidades\Pantalla.cs" />
-    <Compile Include="Entidades\RanuraDeposito.cs" />
     <Compile Include="Entidades\Retiro.cs" />
-    <Compile Include="Entidades\Teclado.cs" />
     <Compile Include="IRepositories\IATMRepository.cs" />
-    <Compile Include="IRepositories\IBaseDatosRepository.cs" />
+    <Compile Include="IRepositories\IClienteRepository.cs" />
     <Compile Include="IRepositories\ICuentaRepository.cs" />
-    <Compile Include="IRepositories\IDispensadorEfectivoRepository.cs" />
-    <Compile Include="IRepositories\IPantallaRepository.cs" />
-    <Compile Include="IRepositories\IRanuraDepositoRepository.cs" />
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\IRetiroRepository.cs" />
-    <Compile Include="IRepositories\ITecladoRepository.cs" />
     <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

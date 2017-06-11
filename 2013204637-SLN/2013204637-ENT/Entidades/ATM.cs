@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2013204637_ENT.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,51 +10,19 @@ namespace _2013204637
     public class ATM
     {
         public int ATMId { get; set; }
-        //los objetos de las clases con las que se relaciona
-        private RanuraDeposito _RanuraDeposito;
-        private Teclado _Teclado;
-        private Pantalla _Pantalla;
-        private DispensadorEfectivo _DispensadorEfectivo;
-        public BaseDatos BaseDatos { get; set; }
-        public Retiro Retiro { get; set; }
+        public string DescATM { get; set; }
 
-        public RanuraDeposito RanuraDeposito
-        {
-            get { return _RanuraDeposito; }
-            set { _RanuraDeposito = value; }
-        }
+        
+        public List<Retiro> Retiros { get; set; }
 
-        public Teclado Teclado
-        {
-            get { return _Teclado; }
-            set { _Teclado = value; }
-        }
 
-        public Pantalla Pantalla
-        {
-            get { return _Pantalla; }
-            set { _Pantalla = value; }
-        }
 
-        public DispensadorEfectivo DispensadorEfectivo
+        public ATM()
         {
-            get { return _DispensadorEfectivo; }
-            set { _DispensadorEfectivo = value; }
+            Retiros = new List<Retiro>();
         }
 
         
-        public ATM()
-        {
-            _RanuraDeposito = new RanuraDeposito();
-            _Teclado = new Teclado();
-            _Pantalla=new Pantalla();
-        }
-
-        public ATM(BaseDatos baseDatos)
-        {
-            
-            BaseDatos = baseDatos;
-        }
 
         
     }

@@ -11,16 +11,16 @@ namespace _2013204637_PER.Repositories
 {
     public class ATMRepository : Repository<ATM> , IATMRepository
     {
-        private readonly _2013204637_SLNDbContext _Context;
+        //private readonly _2013204637_SLNDbContext _Context;
 
-        private ATMRepository()
+        //private ATMRepository()
+        //{
+
+        //}
+
+        public ATMRepository(ATMDbContext context)  : base(context)
         {
-
-        }
-
-        public ATMRepository(_2013204637_SLNDbContext context)
-        {
-            _Context = context;
+            //_Context = context;
         }
     }
 }

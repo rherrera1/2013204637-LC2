@@ -1,4 +1,5 @@
 ﻿using _2013204637;
+using _2013204637_ENT.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -12,15 +13,24 @@ namespace _2013204637_PER.EntitiesConfigurations
     {
         public RetiroConfiguration()
         {
+            ToTable("Retiro");
             HasKey(a => a.RetiroId);
-            HasRequired(c => c.Teclado)
-                .WithOptional(c => c.Retiro);
-            HasOptional(c => c.DispensadorEfectivo)
-                .WithRequired(c => c.Retiro);
-            HasOptional(c => c.Pantalla)
-                .WithRequired(c => c.Retiro);
-            HasOptional(c => c.BaseDatos)
-                .WithRequired(c => c.Retiro);
+            Property(z => z.DescRetiro)
+                .IsRequired();
+            Property(s => s.FechaRetiro)
+                .IsRequired();
+            Property(b => b.Monto)
+                .IsRequired();
+            HasRequired<ATM>(m => m.ATM)
+                .WithMany(h => h.Retiros);
+            HasRequired<Cuenta>(m => m.Cuenta).
+                WithMany(g => g.Retiros);
+
+        //    public int RetiroId { get; set; }
+        //public decimal Monto { get; set; }
+        //public string DescRetiro { get; set; }
+        //public DateTime FechaRetiro { get; set; }
+            
         }
     }
 }

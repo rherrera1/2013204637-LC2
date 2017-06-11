@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2013204637_ENT.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,24 +10,20 @@ namespace _2013204637
     public class Retiro
     {
         public int RetiroId { get; set; }
-        public Teclado Teclado { get; set; }
-        public Pantalla Pantalla { get; set; }
-        public DispensadorEfectivo DispensadorEfectivo { get; set; }
-        public ATM ATM { get; set; }
-        public BaseDatos BaseDatos { get; set; }
+        public decimal Monto { get; set; }
+        public string DescRetiro { get; set; }
+        public DateTime FechaRetiro { get; set; }
+        public int ATMId { get; set; }
+        public int CuentaId { get; set; }
 
+
+        public ATM ATM { get; set; }
+        public Cuenta Cuenta { get; set; }
 
         public Retiro()
         {
 
         }
-        public Retiro(Teclado teclado, Pantalla pantalla, DispensadorEfectivo dispensadorEfectivo, ATM aTM, BaseDatos baseDatos)
-        {
-            Teclado = teclado;
-            Pantalla = pantalla;
-            DispensadorEfectivo = dispensadorEfectivo;
-            ATM = aTM;
-            BaseDatos = baseDatos;
-        }
+        
     }
 }

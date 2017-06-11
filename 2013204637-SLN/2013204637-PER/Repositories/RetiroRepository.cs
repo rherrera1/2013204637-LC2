@@ -10,17 +10,17 @@ namespace _2013204637_PER.Repositories
 {
     public class RetiroRepository : Repository<Retiro> ,IRetiroRepository
     {
-        private readonly _2013204637_SLNDbContext _Context;
+        //private readonly _2013204637_SLNDbContext _Context;
 
-        public RetiroRepository(_2013204637_SLNDbContext _Context)
+        public RetiroRepository(ATMDbContext context) : base(context)
         {
             // TODO: Complete member initialization
-            this._Context = _Context;
+            //this._Context = context;
         }
 
-        private RetiroRepository()
-        {
+        //private RetiroRepository()
+        //{
 
-        }
+        //}
     }
 }
